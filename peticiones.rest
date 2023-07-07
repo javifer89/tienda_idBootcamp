@@ -1,9 +1,8 @@
 GET http://localhost:3000/api/products
 ###
-GET http://localhost:3000/api/products/64a6d6112cefabae519b0e71
 
 ###
-POST http://localhost:3000/api/products
+ POST https://tiendamongodb-7rp6.onrender.com/api/products
 Content-type: application/json
 
 {
@@ -31,15 +30,15 @@ DELETE http://localhost:3000/api/products/64a6d37946a5ecba3fb0960b
 
 ###
 
-POST http://localhost:3000/api/users/register
+POST https://tiendamongodb-7rp6.onrender.com/api/users/register
 Content-Type: application/json
 
 {
-    "username":"Alba",
-    "email":"albita@gmail.com",
+    "username":"Pepito",
+    "email":"pepito@gmail.com",
     "password":"123456"
 }
 ###
 GET http://localhost:3000/api/users/
 ###
-PUT http://localhost:3000/api/users/64a7e0f2b76175e053226674/buy/64a6d37546a5ecba3fb09609
+PUT https://tiendamongodb-7rp6.onrender.com/api/users/64a7e0f2b76175e053226674/buy/64a6d37546a5ecba3fb09609

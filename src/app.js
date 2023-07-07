@@ -7,6 +7,9 @@ const app = express();
 app.use(express.json());
 
 //todas las rutas que lleguen a app, las mandamos a routes/api.js
-app.use ('/api', require('./routes/api'))
+app.get('/', (req, res) => {
+    res.send('hola amiguis');
+});
+    use('/api', require('./routes/api'))
 
 module.exports = app;
