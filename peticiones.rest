@@ -1,0 +1,45 @@
+GET http://localhost:3000/api/products
+###
+GET http://localhost:3000/api/products/64a6d6112cefabae519b0e71
+
+###
+POST http://localhost:3000/api/products
+Content-type: application/json
+
+{
+"name": "aspiradora",
+"description": "para aspirar toda tu casa",
+"price": 199,
+"available": true,
+"stock": " 34",
+"department":"hogar"
+}
+###
+
+PUT http://localhost:3000/api/products/64a6d6112cefabae519b0e71
+Content-type: application/json
+
+{
+    "name": "aspiradora chachi",
+    "available": "false",
+        "price": "220",
+        "stock": 24
+}
+###
+DELETE http://localhost:3000/api/products/64a6d37946a5ecba3fb0960b
+
+
+###
+
+POST http://localhost:3000/api/users/register
+Content-Type: application/json
+
+{
+    "username":"Alba",
+    "email":"albita@gmail.com",
+    "password":"123456"
+}
+###
+GET http://localhost:3000/api/users/
+###
+PUT http://localhost:3000/api/users/64a7e0f2b76175e053226674/buy/64a6d37546a5ecba3fb09609
